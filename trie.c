@@ -73,7 +73,7 @@ bool buscarPrefixo(No* raiz, const char* chave){
     return true;
 }
 
-bool removeraux(No* s, const char* chave, size_t nivel){
+bool removeraux(No* s, const char* chave, int nivel){
     if(nivel == strlen(chave)){
 
          if(s->palavra){
