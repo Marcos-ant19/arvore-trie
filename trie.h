@@ -9,10 +9,10 @@ typedef struct No{
 
 No* criar();
 int mapearIndice(char s);
-void inserir(No* raiz, char* chave);
-void buscarExata(No* raiz, const char* chave);
+void inserir(No* raiz, const char* chave);
+bool buscarExata(No* raiz, const char* chave);
 bool buscarPrefixo(No* raiz, const char* chave);
-bool removeraux(No* s, const char* chave, int nivel);
+bool removeraux(No* s, const char* chave, size_t nivel);
 void remover(No* raiz, const char* chave);
 
 #endif

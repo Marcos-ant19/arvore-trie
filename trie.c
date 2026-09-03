@@ -24,7 +24,7 @@ int mapearIndice(char s){
     return s - 'a';
 }
 
-void inserir(No* raiz, char* chave){
+void inserir(No* raiz, const char* chave){
     int frase = strlen(chave);
     No* s = raiz;
 
@@ -73,7 +73,7 @@ bool buscarPrefixo(No* raiz, const char* chave){
     return true;
 }
 
-bool removeraux(No* s, const char* chave, int nivel){
+bool removeraux(No* s, const char* chave, size_t nivel){
     if(nivel == strlen(chave)){
 
          if(s->palavra){
